@@ -1,0 +1,31 @@
+name: Hata bildir / Bug report
+description: Mavio Player için sorun bildirimi / Report a Mavio Player issue
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "M3U URL, parola veya hesap bilgisi paylaşma. / Never share playlist URLs, passwords or account credentials."
+  - type: input
+    id: version
+    attributes:
+      label: Mavio sürümü / App version
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows sürümü / Windows version
+      placeholder: Windows 11 x64
+  - type: textarea
+    id: steps
+    attributes:
+      label: Sorun ve adımlar / Problem and steps to reproduce
+      description: Beklediğin ve gerçekleşen davranışı anlat. / Explain what you expected and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: İsteğe bağlı görsel / Optional screenshot
+      description: Kişisel bilgileri kapat. / Redact personal information.

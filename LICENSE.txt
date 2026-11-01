@@ -1,0 +1,14 @@
+Mavio Player application and original branding
+Copyright (c) 2026 Mavio. All rights reserved.
+
+Permission is granted to use the published binary application and redistribute
+unmodified binary packages at no charge. This does not grant a source-code
+licence or ownership of the Mavio name or original assets.
+
+Third-party components retain their respective licences. These terms do not
+restrict rights granted under those licences, including reverse engineering
+for debugging modifications to LGPL-covered components. See THIRD_PARTY.md
+and the notices included in the application package.
+
+The application is provided without warranty, to the extent permitted by law.
+Mavio does not provide streaming content or subscriptions.
