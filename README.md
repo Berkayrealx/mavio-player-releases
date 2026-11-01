@@ -37,7 +37,7 @@
 | Ses ve altyazılar | Oynatıcıdan ses/altyazı izi seç; altyazı görünümünü ayarla. |
 | Dizi takibi | Sezon/bölüm seç, önceki/sonraki bölüme geç, diziyi takip et. |
 | 10 tema | **Temalar** sayfasından Mavio Default, Liquid Glass, Black Noir, Black / Red, OLED Bronze ve diğerleri. |
-| Güncellemeler | Açılışta ve 4 saatte bir kontrol; uygulama içinden onaylayarak indir ve yeniden başlat. |
+| Güncellemeler | Açılışta ve dakikada bir kontrol; uygulama içinden onaylayarak indir ve yeniden başlat. |
 | Türkçe / English | **Ayarlar** sayfasından dili değiştir. |
 
 Mavio kanal, film veya abonelik sağlamaz. Kendi erişim yetkin olan kaynaklarını kullanırsın. EPG, ses izleri, altyazılar ve ileri sarma gibi olanaklar kaynağın sunduğu veriye bağlıdır. Intro/özet atlama, zaman aralığı tanımlanmış içeriklerde çalışır.

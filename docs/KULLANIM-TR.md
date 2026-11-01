@@ -79,7 +79,7 @@ Sol menüde **Temalar** ayrı bir sayfadır. Kartına tıkladığın tema uygula
 
 ## 8. Uygulamayı güncelle
 
-1. Yeni sürüm yayınlandığında kütüphanede bildirim görünür. Kontrol açılışta ve 4 saatte bir yapılır.
+1. Yeni sürüm yayınlandığında kütüphanede bildirim görünür. Kontrol açılışta ve dakikada bir yapılır.
 2. **Güncellemeyi indir** düğmesine basıp onayla. İlerlemeyi uygulamada görebilirsin.
 3. **Güncelle ve yeniden başlat** ile ikinci onayı ver. Uygulama kapanır, yeni paket uygulanır ve tekrar açılır.
 4. Kaynaklar ve izleme geçmişi uygulama klasöründen ayrı tutulur. Kurulum sırasında dosya değiştirme hatası oluşursa önceki paket geri konur.

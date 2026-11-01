@@ -79,7 +79,7 @@ Use **Settings** for Turkish / English, reduced motion, startup refresh, playbac
 
 ## 8. Update Mavio
 
-1. Mavio checks for updates at launch and every four hours while running.
+1. Mavio checks for updates at launch and every minute while running.
 2. When a newer version appears, choose **Download update** and confirm.
 3. After downloading, choose **Update and restart**, then confirm the restart.
 4. The app saves progress, closes, applies the package and reopens. Sources and watch history are stored separately from application files. A file-swap installation failure restores the previous package.
