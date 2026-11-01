@@ -2,14 +2,20 @@
 
 [← İndirme sayfası](../README.md) · [English](USER-GUIDE-EN.md)
 
-## 1. İndir ve aç
+## 1. İndir ve kur
 
-1. [Son Windows sürümünü indir](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Windows-x64.zip).
-2. ZIP'i tamamen ayıkla. Uygulamayı ZIP içinden çalıştırma.
-3. `MavioPlayer` klasörünü örneğin Belgeler'e taşı ve içindeki `MavioPlayer.exe` dosyasını aç.
-4. Masaüstü kısayolu istersen EXE'ye sağ tıkla → Gönder → Masaüstü (kısayol oluştur).
+**Önerilen: Inno Setup EXE**
 
-Python, VLC veya ayrı bir oynatıcı kurman gerekmez. Paket içindeki DLL ve klasörleri silme; yalnızca EXE'yi göndermek yeterli değildir. Windows 10/11, 64 bit gerekir. SmartScreen uyarısı çıkarsa kaynağın bu resmi indirme deposu olduğunu doğrula; antivirüsünü kapatma.
+1. [Mavio Player kurulumunu indir](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Setup-Windows-x64.exe) ve çalıştır.
+2. **Sadece benim için** (varsayılan) veya **Tüm kullanıcılar** seçeneğini seç. Tüm kullanıcılar seçeneğinde Windows yönetici onayı ister.
+3. Kurulum konumunu ve masaüstü kısayolunu seçip kurulumu bitir.
+4. Masaüstünden veya Başlat menüsünden **Mavio Player** uygulamasını aç.
+
+**Alternatif: Portable ZIP**
+
+[Portable sürümü indir](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Portable-Windows-x64.zip), ZIP'i tamamen ayıkla ve `MavioPlayer` klasöründeki `MavioPlayer.exe` dosyasını aç. Yanındaki DLL ve klasörler uygulamanın çalışma dosyalarıdır; EXE'yi bunlardan ayırma. Setup kullanırsan bu dosyalar kurulum klasöründe tutulur.
+
+Windows 10/11 x64 gerekir. Python, VLC veya ayrı oynatıcı kurulumu gerekmez. SmartScreen uyarısı çıkarsa dosyanın bu indirme deposundan geldiğini doğrula; antivirüsünü kapatma. Kaldırma işlemi Windows'un Yüklü uygulamalar bölümünden yapılabilir; kişisel kaynak ve izleme verilerin ayrı tutulur.
 
 ## 2. Kaynağını ekle
 
@@ -33,6 +39,12 @@ Mavio kendi içeriğini sağlamaz. IPTV aboneliğin veya kullanma yetkin olan bi
 - **Bağlantıyı göster:** URL'yi gösterir; kopyalayabilir veya metin dosyasına kaydedebilirsin. Bağlantı parola içerebilir, paylaşma.
 - **Sil:** onayından sonra kaynağı, kayıtlı kataloğunu ve o kaynağın izleme geçmişini kaldırır. Önce bağlantıyı kaydetmek istersen bağlantı düğmesini kullan.
 - **Şimdi yenile:** içerik ve yayın rehberini yeniden alır.
+
+## Büyük M3U listeleri
+
+M3U dosyası ve M3U bağlantısı, listedeki `group-title` / `EXTGRP` kategori bilgilerini kullanır. Kategorisi olmayan kayıtlar **Diğer / Other** altında kalır. M3U tek bir liste olduğundan ilk eklemede tamamı bir kez okunur; indirme parça parça geçici dosyaya yazılır ve metin satır satır işlenir. Eski 64 MB sınırı yerine M3U için 1 GB sınırı uygulanır.
+
+10 bin veya daha fazla kaydı olan kaynaklarda Film / Dizi / Canlı TV bölümü önce kategorileri açar. Bir kategori seç; her sayfada en fazla **72 içerik** gösterilir. Önceki / sonraki sayfa düğmelerini kullanabilir veya sol menüden tüm içeriklere geçebilirsin. Afişler görünür alana yaklaştıkça yüklenir. Liste kaydetme ve indeks hazırlama işlemleri arka planda yapılır.
 
 ## 4. İzle, ara, kaldığın yerden devam et
 
@@ -84,7 +96,7 @@ Sol menüde **Temalar** ayrı bir sayfadır. Kartına tıkladığın tema uygula
 3. **Güncelle ve yeniden başlat** ile ikinci onayı ver. Uygulama kapanır, yeni paket uygulanır ve tekrar açılır.
 4. Kaynaklar ve izleme geçmişi uygulama klasöründen ayrı tutulur. Kurulum sırasında dosya değiştirme hatası oluşursa önceki paket geri konur.
 
-Elle kontrol: **Ayarlar → Uygulama güncellemeleri**. Eski, güncelleme özelliği olmayan paketler için ZIP'i buradan yeniden indirmen gerekir. Bilgisayarın kapalıyken anlık bildirim gelmez; Mavio açıkken kontrol yapılır.
+Elle kontrol: **Ayarlar → Uygulama güncellemeleri**. 0.3.0 veya daha eski sürüm kullanıyorsan güncel Setup EXE dosyasını bir kez elle kur. Tüm kullanıcılar için kurulumlarda güncelleme Setup EXE üzerinden yapılır; kullanıcıya özel ve portable kurulumlar uygulama içinden güncellenebilir. Bilgisayarın kapalıyken anlık bildirim gelmez; Mavio açıkken kontrol yapılır.
 
 ## 9. Sorun yaşarsan
 
@@ -95,3 +107,5 @@ Elle kontrol: **Ayarlar → Uygulama güncellemeleri**. Eski, güncelleme özell
 - **Güncelleme indirilmiyor:** internetini ve uygulama klasörüne yazma iznini kontrol et; elle indirme bağlantısını kullanabilirsin.
 
 [Sorun bildir](https://github.com/Berkayrealx/mavio-player-releases/issues/new?template=bug-report.yml). Mavio sürümünü, Windows sürümünü ve hatayı tetikleyen adımları yaz. Ekran görüntülerindeki hesap bilgilerini kapat. M3U URL'si veya parola paylaşma.
+
+İletişim: **Telegram [@berkayrealx](https://t.me/berkayrealx)** · **Discord @berkayrealx**.

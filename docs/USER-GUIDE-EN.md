@@ -2,14 +2,20 @@
 
 [← Download page](../README.md) · [Türkçe](KULLANIM-TR.md)
 
-## 1. Download and launch
+## 1. Download and install
 
-1. [Download the latest Windows package](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Windows-x64.zip).
-2. Right-click the ZIP and choose **Extract All**. Do not run it inside the ZIP.
-3. Move the `MavioPlayer` folder to a permanent location and open **MavioPlayer.exe**.
-4. To create a desktop shortcut, right-click the EXE and choose Send to → Desktop (create shortcut).
+**Recommended: Inno Setup EXE**
 
-Windows 10/11 x64 is required. Python and VLC are not required. Keep all companion folders and DLLs with the EXE. If Windows shows a SmartScreen notice, verify that the package came from this official download repository; do not disable antivirus protection.
+1. [Download Mavio Player Setup](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Setup-Windows-x64.exe) and run it.
+2. Choose **Install for me only** (default) or **Install for all users**. All-users installation requests Windows administrator approval.
+3. Choose the installation folder and desktop shortcut, then finish the wizard.
+4. Open **Mavio Player** from the desktop or Start menu.
+
+**Alternative: Portable ZIP**
+
+[Download portable ZIP](https://github.com/Berkayrealx/mavio-player-releases/releases/latest/download/MavioPlayer-Portable-Windows-x64.zip), extract everything and open `MavioPlayer.exe` inside the `MavioPlayer` folder. Keep its companion DLLs and directories together. Setup places these runtime files in the installation folder for you.
+
+Windows 10/11 x64 is required. Python and VLC are not required. If SmartScreen appears, verify that the file came from this download repository; do not disable antivirus protection. Installed versions can be removed through Windows Installed apps; personal source and viewing data are kept separately.
 
 ## 2. Add your source
 
@@ -33,6 +39,12 @@ On the **Sources** page:
 - **Show link** displays the URL, with copy and text-file export. A URL may contain a password, so keep it private.
 - **Delete** asks for confirmation, then removes that source, its cached catalogue and its viewing history. Export the link first if you may want it again.
 - **Refresh now** fetches current catalogue and programme-guide information.
+
+## Large M3U playlists
+
+Both M3U files and URLs use the playlist's `group-title` / `EXTGRP` categories. Entries without category metadata appear under **Diğer / Other**. A monolithic playlist must be read in full initially; downloads are spooled to a temporary file and parsed line by line. M3U supports up to 1 GB, replacing the previous 64 MB limit.
+
+Sources with 10,000 or more records open Movies / Series / Live TV with a category chooser. Pick a category to browse at most **72 titles per page**. Use previous / next page controls or choose all titles from the sidebar. Covers load near the visible viewport. Catalogue saving and indexing run in the background.
 
 ## 4. Browse and continue watching
 
@@ -84,7 +96,7 @@ Use **Settings** for Turkish / English, reduced motion, startup refresh, playbac
 3. After downloading, choose **Update and restart**, then confirm the restart.
 4. The app saves progress, closes, applies the package and reopens. Sources and watch history are stored separately from application files. A file-swap installation failure restores the previous package.
 
-Manual check: **Settings → App updates**. Old packages without the updater need a manual download first. An offline or closed app cannot receive immediate notifications.
+Manual check: **Settings → App updates**. Version 0.3.0 or earlier needs one manual installation of the current Setup EXE. All-users installations update through Setup EXE; per-user and portable installations can update in-app. An offline or closed app cannot receive immediate notifications.
 
 ## 9. Troubleshooting
 
@@ -95,3 +107,5 @@ Manual check: **Settings → App updates**. Old packages without the updater nee
 - **Update fails:** check internet access and write permission to the application folder. You can download the package manually.
 
 [Report an issue](https://github.com/Berkayrealx/mavio-player-releases/issues/new?template=bug-report.yml) with the app version, Windows version and steps to reproduce. Redact screenshots. Never include playlist URLs or passwords.
+
+Contact: **Telegram [@berkayrealx](https://t.me/berkayrealx)** · **Discord @berkayrealx**.
